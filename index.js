@@ -114,7 +114,11 @@ const actunticationjwtToken = (request,response,next) => {
 
 
 }
+//
 
+app.get("/", (req, res) => {
+    res.send("Backend is live!");
+});
 
 
 // post user
