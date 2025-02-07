@@ -1,0 +1,88 @@
+
+POST http://localhost:3000/userdetails/
+Content-Type: application/json
+
+{
+    "username":"suresh123",
+    "name":"suresh",
+    "password":"Surya@413",
+    "gender":"male",
+    "location":"nizamabad"
+}
+
+###
+POST http://localhost:3000/login/
+Content-Type: application/json 
+
+{
+    "username":"suresh123",
+    "password":"Surya@413"
+}
+
+###
+POST http://localhost:3000/user413/
+Content-Type:application/json
+
+{
+    "id":1,
+    "name":"suresh",
+    "email":"suresh@gmail.com"
+    
+}
+###
+
+GET http://localhost:3000/user413/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InN1cmVzaDEyMyIsImlhdCI6MTczODkyMTU4MH0.h9JHyObENZb4SgU2PUJQ2jZ1rCZUzLVR4-R7fqOVkAw
+
+###
+GET http://localhost:3000/profile/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InN1cmVzaDEyMyIsImlhdCI6MTczODkyMTU4MH0.h9JHyObENZb4SgU2PUJQ2jZ1rCZUzLVR4-R7fqOVkAw
+
+###
+POST http://localhost:3000/user413/
+Content-Type:application/json
+
+{
+    "id":2,
+    "name":"naresh",
+    "email":"naresh@gmail.com"
+    
+}
+###
+POST http://localhost:3000/user413/
+Content-Type:application/json
+
+{
+    "id":3,
+    "name":"ranjith",
+    "email":"ranjith@gmail.com"
+    
+}
+###
+POST http://localhost:3000/user413/
+Content-Type:application/json
+
+{
+    "id":4,
+    "name":"pradeep",
+    "email":"pradeep@gmail.com"
+    
+}
+
+###
+DELETE http://localhost:3000/user413/2/
+Content-Type:application/json
+
+{
+    "id":2
+}
+
+###
+PUT http://localhost:3000/user413/1/
+Content-Type:application/json
+
+{
+    "name":"suresh surya"
+}
+
+
